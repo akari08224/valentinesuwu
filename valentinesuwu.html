@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="C:\Users\JM505 Computers\Desktop\valentines.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">hello sapi adam ♡</h1>
+                <h1 class = "header_text">will u be my valentines uwu (say no)</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWVmejl3NjMxemN6aDBwZHI5Y2p1Ym4xbTQ2MG9zdXlvZm9janE1OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/eltZvfFAW9f9HI1foH/giphy.gif">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "file:///C:/Users/JM505%20Computers/Desktop/afteryes.html";
+                    };
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
